@@ -32,19 +32,19 @@ To run the project, follow these steps:
 
 Here are some screenshots of the project:
 
-1. ![Screenshot 1](link_to_screenshot_1)
-2. ![Screenshot 2](link_to_screenshot_2)
-3. ![Screenshot 3](link_to_screenshot_3)
-4. ![Screenshot 4](link_to_screenshot_4)
-5. ![Screenshot 5](link_to_screenshot_5)
+6. ![Screenshot (373)](https://github.com/Mohitbagul/Pre-Work---Frontend-Development-Internship/assets/126978039/ccd6f0bb-6947-48b6-bc35-63cb0d258d19)
+2. ![Screenshot (374)](https://github.com/Mohitbagul/Pre-Work---Frontend-Development-Internship/assets/126978039/351a9b59-97b0-4951-ba6b-853746eee910)
+3. ![Screenshot (375)](https://github.com/Mohitbagul/Pre-Work---Frontend-Development-Internship/assets/126978039/7ff5d1e7-4fe6-4f8e-adf6-01ed049351a4)
+4. ![Screenshot (376)](https://github.com/Mohitbagul/Pre-Work---Frontend-Development-Internship/assets/126978039/abbd6278-e5c4-4ef3-8cca-5338db1152ff)
+5. ![Screenshot (378)](https://github.com/Mohitbagul/Pre-Work---Frontend-Development-Internship/assets/126978039/5c6b8c3c-afd6-4122-b025-393f74ac7ff1)
+1. ![Screenshot (380)](https://github.com/Mohitbagul/Pre-Work---Frontend-Development-Internship/assets/126978039/f608cfea-d732-4af8-8c5d-cde7345c2bc3)
 
-## Features
+##Top-Features
 
-- **Feature 1**: Description of feature 1.
-- **Feature 2**: Description of feature 2.
-- **Feature 3**: Description of feature 3.
-- **Feature 4**: Description of feature 4.
-- **Feature 5**: Description of feature 5.
+- **Moving Balls**: Animation on 2 balls rolling in horizontal direction.
+- **Alternate apperance of divs in form**: The different input sections in the form comes in alternative fashion.
+- **Hovering effect on preview image**: Preview images get scaled up when hovered upon.
+- **Scroll up button**: Gets to top of the webpage.
+- **Authentication**: Asterik mark feilds(*) are required to be filled.
 
 Feel free to explore the code and contribute!
-```
