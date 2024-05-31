@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b9b6bd45ac.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <section id="logo_section">
+        <div id="logo_image_div"><img src="Bharat-Gold-Ornaments-logo-1.svg" alt="" id="logo_image"></div>
+    </section>
+
+    <section>
+        <button id="scroll_up"  onclick="scrollToTop()">^</button>
+    </section>
+
+    <section>
+        <nav>
+            <ul id="navbar_elements">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Buy</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div id="navbar_under_div">
+            <img src="breadcrumb-page-01.jpg" alt="" id="navbar_under_img">
+            <h1 id="details_text">Details</h1>
+        </div>
+    </section>
+
+    <section id="text_before_img">
+        <div id="text_before_img_div">
+                <h2 class="text_before_img_txt">Celebrate every moment with a touch of elegance.</h2><br>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="text_after_img">
+            <h1 id="text_after_img_text">Take a moment to give us details of your loved ones </h1>
+            <div class="circle bottom-left"></div>
+            <div class="circle top-right"></div>
+        </div>
+    </section>
+
+
+    <section id="jewel_description_form_section"  class="image_animation_section" class="animate-elements">
+
+    <div id="jewel_description_form">  
+            
+        <form>
+
+            <h4 style="background-image: linear-gradient(to bottom right,rgba(152, 236, 216, 0.771),rgba(72, 156, 142, 0.67)); padding: 10px;">
+                <span style="color: red;">*</span>Required
+            </h4>
+
+            <div class="form_div ocassion show">
+                <h2>Select the ocassion for the ornament <span style="color: red;font-weight: normal;">*</span></h2>
+                <div class="ocassion_dropdown">
+                    <div class="selected_text_display">Daily-wear</div>
+                    <div class="dropdown_button_crusor">
+                        <i id="icon" class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <ul class="dropdown-content">
+                        <li data-value="Engagement">Engagement</li>
+                        <li data-value="Anniversary">Anniversary</li>
+                        <li data-value="Birthday">Birthday</li>
+                        <li data-value="Daily-wear">Daily-wear</li>
+                    </select>
+                </div>
+            </div>
+            <div class="form_div gift">
+                <h2>Type of usage<span style="color: red;font-weight: normal;">*</span></h2>
+                <input type="radio" name="usage" value="product_use" id="gift" required>
+                <label for="gift">Gift</label>
+                <input type="radio" name="usage" value="product_use" id="product_use" required>
+                <label for="product_use">Personal use</label>
+            </div>
+            <div class="form_div gender_div">
+                <h2>Select your gender<span style="color: red;font-weight: normal;">*</span></h2>
+                <input type="radio" value="male" name="gender" id="male" required>
+                <label for="male">Male <i style="color: purple;font-size: 28px;" class="fa-solid fa-mars"></i></label>
+                <input type="radio" value="female" name="gender" id="female" required>
+                <label for="female">Female <i style="color: purple;font-size: 28px;" class="fa-solid fa-venus"></i></label>
+                <input type="radio"value="other" name="gender" id="other" required>
+                <label for="other">Other</label>
+            </div>
+            <div class="form_div age_group">
+                <h2>Select age group for jewellery<span style="color: red;font-weight: normal;">*</span></h2>
+                    <div class="age_group_internal">
+                        <div>
+                            <input type="radio" id="age_0_17" value="0-17" name="age_group" required>
+                            <label for="age_0_17">0 - 17</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="age_18_24" value="18-24" name="age_group" required>
+                            <label for="age_18_24">18 - 24</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="age_25_34" value="25-34" name="age_group" required>
+                            <label for="age_25_34">25 - 34</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="age_35_44" value="35-44" name="age_group" required>
+                            <label for="age_35_44">35 - 44</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="age_45_54" value="45-54" name="age_group" required>
+                            <label for="age_45_54">45 - 54</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="age_55_plus" value="55+" name="age_group" required>
+                            <label for="age_55_plus">55+</label>
+                        </div>
+                        
+                    </div>
+            </div>
+            
+            <div class="form_div religion" >
+            <h2>Enter your religion <span style="color: red;font-weight: normal;">*</span></h2>
+            <p>(Helps us to improve recommendations)</p>
+            <input type="text" name="religion" id="religion_input" required>
+        </div>
+        
+        <div class="form_div jewellery_type">
+            <h2>Enter the jewels that you would prefer to take<span style="color: red;font-weight: normal;">*</span></h2>
+                <div class="jewellery_type_internal">
+                    <div>
+                        <input type="checkbox" id="rings" value="rings" name="jewel_type" required>
+                        <label for="rings">Rings</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="earrings" value="earrings" name="jewel_type" required>
+                        <label for="earrings">Earrings</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="necklace" value="necklace" name="jewel_type" required>
+                        <label for="necklace">Necklace</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pendants" value="pendants" name="jewel_type" required>
+                        <label for="pendants">Pendants</label>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="form_div budget">
+            <h2>Select your budget(in 1000's)<span style="color: red;font-weight: normal;">*</span></h2>
+            <div class="budget_internal">
+                <div>
+                    <input type="radio" value="<100" name="budget_range" id="budget_100" required> 
+                    <label for="budget_100">Less than $100</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="100-500" name="budget_range" id="budget_100_500" required>
+                    <label for="budget_100_500">$100 - $500</label>
+                </div>
+                
+                <div>
+                    <input type="radio" value="500-1000" name="budget_range" id="budget_500_1000" required>
+                    <label for="budget_500_1000">$500 - $1000</label>
+                </div>
+                
+                <div>
+                    <input type="radio" value="1000-5000" name="budget_range" id="budget_1000_5000" required>
+                    <label for="budget_1000_5000">$1000 - $5000</label>
+                </div>
+                
+                <div>
+                    <input type="radio" value=">5000" name="budget_range" id="budget_5000" required>
+                    <label for="budget_5000">$5000+</label>
+                </div>
+                
+            </div>
+        </div>
+        <div class="form_div matching_outfit">
+            <h2 for="outfit">Would you like to match your jewellery with an outfit?</h2>
+            <input type="file" id="outfit" name="outfit" accept="image/*" title=" " multiple>
+            <div id="outfitPreview"></div>
+        </div>
+        <div class="submit_class">
+            <input type="submit" value="SUBMIT" id="submit_button" id="choose_files">
+        </div>
+    </form>
+</div> 
+
+    </section>
+
+    <section class="footer_section">
+        <footer>
+            <div class="footer_section_div">
+                <p><span>&copy;</span> 2024 Bharat Gold Ornaments Pvt Ltd | All Rights Reserved</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

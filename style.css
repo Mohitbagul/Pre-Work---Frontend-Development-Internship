@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+label{
+    cursor: pointer;
+}
+
+/* scroll up btn */
+#scroll_up {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #000000; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px; 
+    z-index: 1000; 
+    transition: opacity 0.4s; 
+}
+
+#scroll_up:hover {
+    background-color: #bd7f22; 
+}   
+
+
+/*logo*/
+#logo_section{
+    max-height: 95px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#logo_image_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_image{
+    max-height: 97px;
+    justify-content: center;
+}
+
+
+/* Navbar */
+#navbar_elements{
+    list-style-type: none;
+    margin: 0px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #d69627;
+}
+
+#navbar_elements li{
+    font-size: 16px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#navbar_elements li a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar_elements li a:hover{
+    color: white;
+}
+
+/*image under navbar*/
+#navbar_under_div{
+    position: relative;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+#navbar_under_img{
+    max-width: 100%;
+}
+
+#details_text{
+    font-size: 40px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+/*text after the navbar section*/
+#text_before_img {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#text_before_img_div {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background: url('background_img_text.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.text_before_img_txt{
+    position: absolute;
+    font-size: 30px;
+}
+
+/*text after the image*/
+#text_after_img{
+    background-image: url('images/images.jpg');  
+    height: 600px;
+    position: relative;
+    display: flex;
+    color: rgb(8, 6, 68);
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#text_after_img h1{
+    font-size: 35px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #a12809;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    animation: moveCircle 4s linear infinite alternate;
+    box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+}
+
+.bottom-left {
+    bottom: 0px;
+    left: -50px;
+    animation: moveRight 4s infinite alternate;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 100px); 
+    }
+}
+
+.top-right {
+    top: 5px;
+    right: -50px;
+    animation: moveLeft 2s infinite alternate;
+}
+
+@keyframes moveLeft{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: calc(100% - 100px);
+    }
+}
+
+/*form section*/
+
+#text_after_img, #jewel_description_form_section {
+    position: relative;
+    z-index: 1;
+}
+#jewel_description_form_section{
+    background: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/img3.webp);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#jewel_description_form{
+    margin-top: 50px;
+    width: 850px;
+    margin-bottom: 80px;
+    overflow-x: hidden;
+}
+
+.ocassion, .gift, .gender_div, .age_group, .religion, .jewellery_type, .budget, .matching_outfit{
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom right,rgba(152, 236, 216, 0.771),rgba(72, 156, 142, 0.67));
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* opacity: 0; */
+    z-index: 10;
+}
+
+.form_div{
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.form_div:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.form_div.show{
+    transform: translateX(0);
+}
+
+#religion_input{
+    height: 25px;
+    width: 250px;
+}
+
+input[type='radio']{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label::before {
+    color: blue;
+}
+
+input[type="checkbox"]:checked + label::before {
+    color: blue;
+}
+
+.gift{
+    z-index: 1;
+}
+
+.gift label{
+    margin-right: 40px;
+}
+
+.gender_div label{
+    margin-right: 40px;
+}
+
+label{
+    font-size: 18px;
+}
+
+input[type='file'] {
+    color: transparent;
+  }
+
+.submit_class{
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#submit_button{
+    width: 198px;
+    height: 41px;
+    background-color: #d69627;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+}
+
+#submit_button:hover{
+    background-color: black;
+}
+
+.ocassion_dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.dropdown_button_crusor{
+    /* position: relative; */
+    display: inline-block;
+    width: 20px;
+    background-color: rgb(211, 213, 215);
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown_button_crusor i {
+    transition: transform 0.3s ease;
+}
+
+.ocassion {
+    position: relative;
+}
+.ocassion_dropdown:hover i {
+    transform: rotate(270deg);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    min-width:160px;
+    z-index: 1000;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content li{
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.ocassion_dropdown:hover .dropdown-content{
+    display: block;
+    border: 1px solid rgb(123, 15, 15);
+}
+
+.selected_text_display{
+    border: 1px solid black;
+    padding: 13px;
+    display: inline;
+    margin-left: 45px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(26, 128, 11);
+}
+
+.selected_occasion {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.dropdown-content li:hover {
+    background-color: #ddd;
+    border: 1px solid rgb(123, 15, 15);
+}
+
+.age_group_internal{
+    display: flex;
+    flex-direction: column;
+}
+
+.jewellery_type_internal{
+    display: flex;
+    flex-direction: column;
+}
+
+.budget_internal{
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+#outfitPreview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.preview-image {
+    width: calc(33.33% - 20px);
+    height: 100%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out;
+    z-index: 0;
+}
+
+.preview-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.1s ease-in-out;
+    z-index: 1;
+}
+
+.preview-image:hover{
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.preview-image:hover .remove-button{
+    transform: scale(1.1);
+}
+
+.preview-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.remove-button {
+    position: absolute;
+    top: 2px;
+    /* right: 2px; */
+    left: 175px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    z-index: 2;
+}
+
+.footer_section_div{
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #efba5f;
+    color: rgb(0, 0, 0);
+}
+
+
+/* animations */
+
+  @keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+
+/* Animations */
+#text_before_img_div{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+#text_after_img{
+    scroll-snap-align: start;
+}
+
+#choose_files{
+    width: 200px;
+    height: 300px;
+}
+
+@media (max-width: 767px) {
+    .jewel_description_form_section{
+        height: 100%;
+    }
+    #navbar_elements {
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+    }
+
+    #navbar_elements li {
+        margin: 5px 0;
+    }
+
+    #logo_image {
+        max-width: 80%;
+    }
+
+    #text_before_img_div, #text_after_img {
+        padding: 20px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .form_div {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    #jewel_description_form {
+        width: 100%;
+        margin: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+        background: #d69627;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 460px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #text_before_img_div {
+        padding: 5px;
+    }
+
+    #logo_image {
+        max-width: 60%;
+    }
+
+    #text_before_img_div,
+    #text_after_img {
+        padding: 10px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .form_div {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    #jewel_description_form {
+        width: 100%;
+        margin: 10px;
+    }
+
+    #menu-toggle {
+        display: block;
+        background: #d69627;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* Make navbar fixed */
+    #navbar_elements {
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        background-color: #333;
+        padding: 5px; 
+        z-index: 1000;
+    }
+
+    #navbar_elements li {
+        margin: 5px 0; 
+        font-size: 16px;
+    }
+
+    #scroll_up {
+        bottom: 60px;
+    }
+}
+
